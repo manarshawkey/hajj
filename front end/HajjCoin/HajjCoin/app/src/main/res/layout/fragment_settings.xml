@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".SettingsFragment"
+    >
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        >
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/profile"
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/user_name"
+                />
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="user name"
+                android:textAppearance="?android:textAppearanceMedium"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textColor="@color/textColor"
+                app:layout_constraintTop_toBottomOf="@id/profile_image" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_width ="match_parent"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:layout_weight="0.2"
+        android:fontFamily="@font/oswald_light"
+        android:layout_marginLeft="16dp"
+        android:text=""/>
+
+    <TextView
+        android:layout_width ="match_parent"
+        android:layout_height="0dp"
+        android:clickable="false"
+        android:layout_weight="0.2"
+        android:drawableLeft="@drawable/ic_phone"
+        android:drawablePadding="20dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/textColor"
+        android:text="(551) 022-367-14"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/join_btn"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:layout_width ="match_parent"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:layout_weight="0.2"
+        android:fontFamily="@font/oswald_light"
+        android:layout_marginLeft="16dp"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/logout"
+        android:drawablePadding="20dp"
+        android:text="Log Out"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/join_btn"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        />
+
+
+    <TextView
+        android:layout_width ="match_parent"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:layout_weight="1"
+        android:fontFamily="@font/oswald_light"
+        android:layout_marginLeft="16dp"
+        android:text=""/>
+
+</LinearLayout>
